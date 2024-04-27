@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incentive Calculator</title>
+    <link rel="stylesheet" href="/stylesheets/incentive.css">
+</head>
+<body>
+    <div class="container">
+        <h2 id="incentiveHeading" >Incentive Calculator</h2>
+        <label id="salesresult" for="salesInput">Enter Sales Results:</label>
+        <input type="number" id="salesInput" placeholder="Enter sales results" min="0">
+        <button id="incentiveBtn" onclick="calculateIncentive()">Calculate</button>
+        <div id="incentiveResult"></div>
+        <div id="holidayResult"></div>
+        <div id="holidaypackage"></div>
+
+        <a id="backBtn" href="/profile">Back</a>
+    </div>
+
+    <script src="/javascript/incentive.js"></script>
+</body>
+</html>

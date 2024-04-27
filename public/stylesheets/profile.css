@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+}
+  
+*::before{
+  content: '';
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url(../images/bg2.png);
+  opacity: 0.03;
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-size: 70% 117%;
+}
+  body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #97e2f4;
+    gap: 30px;
+  }
+  
+  .btns {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    height: 80px;
+  }
+  
+  .btns {
+    background: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    height: 35px;
+    border-radius: 4px;
+    font-size: 25px;
+    font-weight: 700;
+    color: red;
+    box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px #ceced1;
+    cursor: pointer;
+  }
+
+  .header {
+    background-color: #ffffff4f;
+    color: #000000;
+    padding: 20px;
+    border-radius: 0px 0px 15px 15px;
+    text-align: center;
+    box-shadow: inset -2px -2px 3px #ffffff, inset 2px 2px 3px #ceced1
+}
+  
+  .btns:hover {
+    background: none;
+    border: none;
+    background: #ecf0f3;
+    outline: none;
+    height: 35px;
+    border-radius: 4px;
+    box-shadow: inset -2px -2px 3px #ffffff, inset 2px 2px 3px #ceced1;
+  }
+
+.form1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

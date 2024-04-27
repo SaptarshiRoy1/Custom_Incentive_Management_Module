@@ -1,0 +1,85 @@
+/* *{background-color: rgb(151, 151, 151);} */
+*::before{
+  content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('../images/bg.jpg');
+            opacity: 0.3; /* Adjust opacity level */
+            z-index: -1; /* Ensure background image is behind the text */
+}
+
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+input[type="number"], button {
+    margin: 10px 0;
+}
+
+div #incentiveHeading{
+    font-size: 50px;
+    border-radius: 8px;
+    background: #ffffff;
+    box-shadow: -3px -3px 7px #ceced1, 3px 3px 5px #454546;
+    padding: 20px;
+}
+
+#incentiveResult {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+#salesresult{
+    font-size: 20px;
+    padding: 15px;
+}
+
+#salesInput{
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#incentiveBtn,#backBtn {
+    background: none;
+    background: #ffffff;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    height: 35px;
+    width: 100%;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: bold;
+    color: red;
+    box-shadow: 3px 3px 5px #aeaeb0;
+    cursor: pointer;
+  }
+
+  #backBtn{
+    padding: 5px;
+    width: auto;
+  }
+
+  
+  #incentiveBtn:hover,#backBtn:hover {
+    background: none;
+    border: none;
+    background: #ecf0f3;
+    outline: none;
+    height: 35px;
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: inset -2px -2px 3px #ffffff, inset 2px 2px 3px #ceced1;
+  }
+
+  #holidayResult,#holidaypackage{
+    padding: 15px;
+    font-size: 18px;
+  }
+  

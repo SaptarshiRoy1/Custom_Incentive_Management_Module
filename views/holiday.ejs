@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holiday Package Management</title>
+    <link rel="stylesheet" href="/stylesheets/holiday.css">
+    <!-- <link rel="stylesheet" href="/stylesheets/incentive.css" -->
+</head>
+<body>
+    <div class="container">
+        <h1 id="head">Holiday Package Management</h1>
+        
+        <form id="holidayForm" action="/upload" method="post" >
+            <label for="holidayName">Holiday Name:</label>
+            <input type="text" id="holidayName" name="holidayName" required>
+
+            <label for="duration">Duration (Nights):</label>
+            <input type="number" id="duration" name="duration" required>
+
+            <label for="destination">Destination:</label>
+            <input type="text" id="destination" name="destination" required>
+
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location">
+
+            <label for="amenities">Amenities:</label>
+            <textarea id="amenities" name="amenities" rows="4"></textarea>
+
+            <button id="incentiveBtn" type="submit">Add Holiday Package</button>
+            <a id="backBtn" href="/profile">Back</a>
+        </form>
+        <div id="packageList"></div>
+    </div>
+
+
+    <div class="cardcontainer">
+        <% holidays.forEach(function(holiday){%>
+
+            <div class="cards">
+  
+                <h3 id="cardhead"><%= holiday.HolidayName %></h3>
+            <p class="cardp"><strong>Duration:</strong><%= holiday.Duration %></p>
+            <p class="cardp"><strong>Destination:</strong><%= holiday.Destination %></p>
+            <p class="cardp"><strong>Location:</strong> <%= holiday.Location %></p>
+            <p class="cardp"><strong>Amenities:</strong></p>
+            <p><%= holiday.Amenities %></p>
+            <a class="delete-btn" href="/delete/<%= holiday._id %>" >Delete</a>
+                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                
+            </div>
+  
+            <%  })%>      
+    </div>
+
+    <script src="/javascript/holiday.js"></script>
+</body>
+</html>
