@@ -2,10 +2,10 @@ const mongoose = require('mongoose');
 require("dotenv").config()
 
 //connect with local mongoDB database
-mongoose.connect("mongodb://127.0.0.1:27017/IncentiveManagement")
+// mongoose.connect("mongodb://127.0.0.1:27017/IncentiveManagement")
 
 //For MongoDB Atlass Database connect
-// mongoose.connect("mongodb+srv://sap:Sr721121@cluster0.ovsalvk.mongodb.net/")
+mongoose.connect("mongodb+srv://sap:Sr721121@cluster0.ovsalvk.mongodb.net/")
 
 const plm = require("passport-local-mongoose")
 
